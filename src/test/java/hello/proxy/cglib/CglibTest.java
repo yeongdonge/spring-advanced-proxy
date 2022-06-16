@@ -2,10 +2,14 @@ package hello.proxy.cglib;
 
 import hello.proxy.cglib.code.TimeMethodInterceptor;
 import hello.proxy.common.service.ConcreteService;
+import lombok.Data;
+import lombok.EqualsAndHashCode;
+import lombok.ToString;
 import lombok.extern.slf4j.Slf4j;
 import org.junit.jupiter.api.Test;
 import org.springframework.cglib.proxy.Enhancer;
 
+@Data
 @Slf4j
 public class CglibTest {
 
